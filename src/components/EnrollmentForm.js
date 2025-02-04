@@ -61,7 +61,7 @@ const EnrollmentForm = () => {
         setLoading(true);
 
         try {
-            const response = await axios.post(`${process.env.REACT_APP_API_URL}/enroll`, formData);
+            const response = await axios.post(`${process.env.REACT_APP_API_URL}/api/enroll`, formData);
             if (response.data.success) {
                 const selectedBatch = batches.find(b => b.id === parseInt(formData.batchId));
                 setEnrollmentDetails({
