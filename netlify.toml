@@ -8,4 +8,4 @@
   status = 200
 
 [build.environment]
-  REACT_APP_API_URL = "https://yogabackend-tts8.onrender.com/"
+  REACT_APP_API_URL = "https://yogabackend-4h6l.onrender.com"
