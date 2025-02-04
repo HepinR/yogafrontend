@@ -46,7 +46,7 @@ const EnrollmentForm = () => {
     const fetchBatches = async () => {
         try {
             console.log('Fetching batches from:', API_URL);
-            const response = await axios.get(`${API_URL}/batches2`);
+            const response = await axios.get(`${API_URL}/batches`);
             console.log('Batches response:', response.data);
             setBatches(response.data);
         } catch (err) {
