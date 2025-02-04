@@ -41,7 +41,7 @@ const EnrollmentForm = () => {
         fetchBatches();
     }, []);
     
-    const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5001';
+    const API_URL = process.env.REACT_APP_API_URL || 'https://yogabackend-4h6l.onrender.com';
 
     const fetchBatches = async () => {
         try {
