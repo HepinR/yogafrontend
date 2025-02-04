@@ -41,12 +41,12 @@ const EnrollmentForm = () => {
         fetchBatches();
     }, []);
     
-    const API_URL = process.env.REACT_APP_API_URL || 'https://yogabackend-4h6l.onrender.com';
+    const API_URL = process.env.REACT_APP_API_URL || 'https://localhost:5001';
 
     const fetchBatches = async () => {
         try {
-            console.log('Fetching batches from:', API_URL);
-            const response = await axios.get(`${API_URL}/batches`);
+            console.log('Fetching batches from:',  `${API_URL}/api/batches`);
+            const response = await axios.get(`${API_URL}/api/batches`);
             console.log('Batches response:', response.data);
             setBatches(response.data);
         } catch (err) {
