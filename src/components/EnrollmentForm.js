@@ -67,7 +67,6 @@ const EnrollmentForm = () => {
                 setEnrollmentDetails({
                     ...formData,
                     batchTime: selectedBatch?.time_slot,
-                    paymentId: response.data.paymentId,
                     enrollmentDate: new Date().toLocaleDateString()
                 });
                 setShowConfirmation(true);
